@@ -1,12 +1,14 @@
 import AppHeader from "./components/AppHeader"
-import AppMain from "./components/AppMain"
+import AppEsercizio from "./components/AppEsercizio"
+import AppBonus from "./components/AppBonus"
 
 function App() {
 
   return (
     <>
       <AppHeader />
-      <AppMain/>
+      {/* <AppEsercizio /> */}
+      <AppBonus />
     </>
   )
 }
