@@ -1,16 +1,20 @@
-# React + Vite
+**Esercizio**
+Dato un array di oggetti contenente i linguaggi del web e le loro descrizioni:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[] Crea una serie di card che mostrano al loro interno un bottone. Il testo del bottone, corrisponde al nome del linguaggio.
+[] Se il bottone viene cliccato, cambia colore e la descrizione diventa visibile all’interno della card.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+**Bonus**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[] Crea una lista di bottoni, uno per  linguaggio.
+[] Sotto i bottoni, inserisci una singola card. In partenza, questa card mostra il  titolo e la descrizione del primo linguaggio nell’array.
+[] Fare in modo che, cliccando uno dei bottoni, la card cambi contenuto e visualizzi il linguaggio corrispondente e la relativa descrizione
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Super Bonus**
+
+[] Scomporre la card dei dettagli in un componente a parte che mantenga le sue funzionalità
+[] Scomporre i buttons in componenti a parte che mantengono tutte le funzionaliltà
+
