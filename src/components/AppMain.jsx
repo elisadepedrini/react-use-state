@@ -1,6 +1,14 @@
 import { languages } from "../languages"
+import { useState } from "react"
 
 export default function AppMain() {
+
+  const [isActive, setIsActive] = useState(null)
+
+  function toggleButton(id) {
+    setIsActive(isActive === id ? null : id)
+    
+  }
 
     return(
         <>
@@ -8,8 +16,8 @@ export default function AppMain() {
           {languages.map(el => 
             <div className="card mb-3" key={el.id}>
               <div className="card-body">
-                <button className="btn btn-primary">{el.title}</button>
-                <p className="card-text">{el.description}</p>
+                <button onClick={() => toggleButton(el.id)} className={`btn ${isActive === el.id ? 'btn-warning' : 'btn-primary'}`}>{el.title}</button>
+                { isActive === el.id && <p className="card-text">{el.description}</p> }
               </div>
             </div>
           )}
